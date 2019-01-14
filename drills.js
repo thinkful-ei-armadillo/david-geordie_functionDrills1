@@ -12,8 +12,10 @@ function createGreeting(name, age) {
 }
 
 try{
-    const greeting1 = createGreeting(Geordie, 28);
-} catch
+  const greeting1 = createGreeting('Geordie', 28);
+  console.log(greeting1);
+} catch (e) {
+  console.log('Please enter valid information');
+}
 
 
-console.log(greeting1);
