@@ -7,6 +7,9 @@ function getYearOfBirth(age) {
 }
 
 function createGreeting(name, age) {
+  if(name === undefined || age === undefined) {
+    throw new Error('Arguments not valid');
+  }
   const yearOfBirth = getYearOfBirth(age);
   return 'Hi, my name is ' + name + ' and I am ' + age + ' years old. I was born in ' + yearOfBirth + '.';
 }
